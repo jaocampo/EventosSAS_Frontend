@@ -1,5 +1,9 @@
 <form ng-submit="vm.registrarEquipo()" class=""  >
-  <input placeholder="Nombre" type="text" name="name" value="" ng-model="vm.equipo.equipo">
-  <input placeholder="Fecha" type="number" name="name" value="" ng-model="vm.equipo.usuariosId.id">
+  <input placeholder="Nombre" type="text" name="name" value="" ng-model="vm.equipoNombre">
+  <select class="" name="" ng-model="vm.tipoUsuario" ng-change="vm.seleccionarTipoUsuario()">
+    <option></option>
+    <option ng-repeat="item in vm.opciones" ng-value="item.valor">{{item.nombre}}</option>
+  </select>
+  <input ng-show="vm.mostrarCampo" type="text" placeholder="Numero de documento o codigo" name="name" value="" ng-model="vm.criterio">
   <button type="submit" name="button">Registrar equipo</button>
 </form>

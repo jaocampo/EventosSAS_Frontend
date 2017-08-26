@@ -5,6 +5,10 @@ function eventosService(API,$resource){
   },{
     update:{
       method:'PUT'
+    },
+    findByCodigo:{
+      method:'GET',
+      url:API+'/eventos/find'
     }
   })
 }

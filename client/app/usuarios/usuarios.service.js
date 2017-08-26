@@ -5,6 +5,10 @@ function usuariosService(API,$resource){
   },{
     update:{
       method:'PUT'
+    },
+    findByNumDocumento:{
+      method:'GET',
+      url:API+'/usuarios/find'
     }
   })
 }
