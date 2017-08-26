@@ -1,5 +1,5 @@
 <form ng-submit="vm.registrarEquipo()" class=""  >
-  <input placeholder="Nombre" type="text" name="name" value="" ng-model="vm.equipoNombre">
+  <input placeholder="Nombre" type="text" name="name" value="" ng-model="vm.numeroDocument">
   <select class="" name="" ng-model="vm.tipoUsuario" ng-change="vm.seleccionarTipoUsuario()">
     <option></option>
     <option ng-repeat="item in vm.opciones" ng-value="item.valor">{{item.nombre}}</option>

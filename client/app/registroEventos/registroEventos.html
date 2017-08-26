@@ -1,0 +1,9 @@
+<form class="" ng-submit="vm.registarAsistencia()">
+  <input type="text" name="name" value="" ng-model="vm.numeroDocumento">
+
+  <select class="" name="" ng-model="vm.registroEvento.eventosId.id">
+    <option></option>
+    <option ng-repeat="item in vm.eventos" ng-value="{{item.id}}">{{item.nombre}}</option>
+  </select>
+  <button type="submit" name="button">Registrar</button>
+</form>
